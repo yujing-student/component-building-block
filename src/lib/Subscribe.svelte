@@ -22,3 +22,27 @@
 </svg>
 </div>
 
+
+<style>
+    div{
+        margin-top: 2rem;
+    }
+    .button{
+        border-left: 1px solid #666666;
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #666666;
+        width: 6rem;
+        padding: 0.55rem;
+        margin-right: -0.3rem;
+        color: #666666;
+        text-decoration: none;
+    }
+    svg{
+        border: 1px solid #666666;
+        margin-bottom: -0.8rem;
+        width: 22px;
+        height: 2.3rem;
+        /* padding: 0px; */
+        /* margin: 0px; */
+    }
+</style>
