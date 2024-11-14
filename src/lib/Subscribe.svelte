@@ -1,5 +1,5 @@
 <div class="div-styling">
-    <a href="/bedankt" class="button">Schrijf me in <svg aria-label="pijltje ga naar schrijf me in"
+    <a href="/bedankt" class="button">SCHRIJF MIJ IN <svg aria-label="pijltje ga naar schrijf me in"
         width="16"
         height="16"
         viewBox="0 0 16 16"
@@ -28,19 +28,20 @@
     .div-styling{
         margin-top: 2rem;
         grid-row: 8;
+        font-family: 'Martian Mono';
     }
     .button{
-        border-left: 1px solid #666666;
-        border-top: 1px solid #666666;
-        border-bottom: 1px solid #666666;
+        border-left: 1px solid var(--grey);
+        border-top: 1px solid var(--grey);
+        border-bottom: 1px solid var(--grey);
         margin-right: -0.3rem;
-        color: #666666;
+        color: var(--black);
         text-decoration: none;
         padding: 0.55rem 0 0.55rem 0.55rem;
 
     }
     svg{
-        border: 1px solid #666666;
+        border: 1px solid var(--grey);
         padding: 0.58rem;
         margin-bottom: -0.8rem;
     }

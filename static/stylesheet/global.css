@@ -38,7 +38,7 @@
 }
 
 body{
-  font-family: Archivo;
+  font-family: var(--martian-mono);
   padding: 2rem;
 }
 

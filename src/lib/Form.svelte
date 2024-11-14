@@ -2,7 +2,7 @@
 <script>
     import TextButton from '$lib/Subscribe.svelte'
 </script>
-<h1>inschrijven</h1>
+<h1>INSCHRIJVEN</h1>
 
 
 <form>
@@ -90,7 +90,7 @@
 
 <style>
     form{
-        color: #666666;
+        color: var(--grey);
     }
     fieldset{
         border: none;
@@ -113,7 +113,7 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        border-bottom: 1.5px solid black;
+        border-bottom: 1.5px solid var(--black);
         gap: 0.8rem;
     }
 
@@ -138,7 +138,7 @@
     textarea:focus,
     select:focus,
     input:focus {
-        outline: 2px solid blue; /* Adjust the color and width as needed */
+        outline: 2px solid var(--blue); /* Adjust the color and width as needed */
     }
     @media (max-width: 700px) {
         .form-label {
@@ -147,7 +147,7 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            border-bottom: 1.5px solid black;
+            border-bottom: 1.5px solid var(--black);
         }
     }
 
