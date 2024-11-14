@@ -1,4 +1,4 @@
-<div>
+<div class="div-styling">
     <a href="bedankt" class="button">Schrijf me in</a>  <svg
         width="16"
         height="16"
@@ -24,8 +24,9 @@
 
 
 <style>
-    div{
+    .div-styling{
         margin-top: 2rem;
+        grid-row: 8;
     }
     .button{
         border-left: 1px solid #666666;

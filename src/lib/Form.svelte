@@ -8,6 +8,11 @@
 <form>
     <fieldset>
         <legend>persoonlijke gegevens</legend>
+        <label for="functie" class="form-label" >
+            Functie*
+            <!--            <span class="star">*</span>-->
+            <input id="functie" type="text" required aria-required="true"/>
+        </label>
         <label for="Voornaam" class="form-label" >Voornaam*
             <!--            <span class="star">*</span>-->
             <input id="Voornaam"  type="text" required aria-required="true"
@@ -22,11 +27,7 @@
             <!--            <span class="star">*</span>-->
             <input id="Achternaam"  type="text" required aria-required="true"/>
         </label>
-        <label for="functie" class="form-label" >
-            Functie*
-            <!--            <span class="star">*</span>-->
-            <input id="functie" type="text" required aria-required="true"/>
-        </label>
+
         <label for="email" class="form-label"  >
             E-mail*
             <!--            <span class="star">*</span>-->
@@ -42,21 +43,21 @@
             <!--            <span class="star">*</span>-->
             <input id="Bedrijfsnaam"  type="text" required aria-required="true"/>
         </label>
-        <label for="Bedrijfswebsite" class="form-label">
+        <label for="Bedrijfswebsite" class="form-label ">
             Bedrijfswebsite*
             <!--            <span class="star">*</span>-->
             <input id="Bedrijfswebsite"    type="text" required aria-required="true" />
         </label>
 
 
-        <label for="ik-wil-graag-lid-worden-omdat" class="form-label " >
+        <label for="ik-wil-graag-lid-worden-omdat" class="form-label input-textfield" >
             ik wil graag lid worden omdat*
             <!--            <span class="star">*</span>-->
             <textarea id="ik-wil-graag-lid-worden-omdat" required aria-required="true">
 
             </textarea>
         </label>
-        <label for="FTE">
+        <label for="FTE" class="dropown">
             FTE*
             <!--            <span class="star">*</span>-->
             <select id="FTE" required aria-required="true" >
@@ -111,6 +112,7 @@
         justify-content: center;
         width: 100%;
         border-bottom: 1.5px solid black;
+        gap: 0.8rem;
     }
 
 
@@ -134,6 +136,14 @@
             /*background-color: red;*/
             max-width: 700px;
             gap: 1rem;
+        }
+        .input-textfield{
+            grid-row: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .dropown{
+            grid-row: 7;
         }
     }
 
