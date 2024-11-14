@@ -40,18 +40,17 @@
             Bedrijfswebsite*
             <input id="Bedrijfswebsite"    type="text"/>
         </label>
-        <label for="ik wil graag lid worden omdat" class="form-label ">
+
+
+        <label for="ik-wil-graag-lid-worden-omdat" class="form-label ">
             ik wil graag lid worden omdat*
-            <textarea>
+            <textarea id="ik-wil-graag-lid-worden-omdat">
 
             </textarea>
         </label>
         <label for="FTE">
             FTE*
             <select id="FTE" >
-                <option value="">
-
-                </option>
                 <option value="1-9">
                     1-9
                 </option>
