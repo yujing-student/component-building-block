@@ -6,51 +6,50 @@
 <form>
     <fieldset>
         <legend>persoonlijke gegevens</legend>
-        <label for="Voornaam" class="form-label">
-            Voornaam*
-            <input id="Voornaam"  type="text" required
-
+        <label for="Voornaam" class="form-label" >Voornaam
+            <span class="star">*</span>
+            <input id="Voornaam"  type="text" required aria-required="true"
             />
         </label>
-        <label for="Tussenvoegsel" class="form-label">
+        <label for="Tussenvoegsel" class="form-label" >
             Tussenvoegsel
             <input id="Tussenvoegsel" type="text"/>
         </label>
-        <label for="Achternaam" class="form-label">
-            Achternaam*
-            <input id="Achternaam"  type="text"/>
+        <label for="Achternaam" class="form-label" >
+            Achternaam    <span class="star">*</span>
+            <input id="Achternaam"  type="text" required aria-required="true"/>
         </label>
-        <label for="functie" class="form-label">
-            Functie*
-            <input id="functie" type="text"/>
+        <label for="functie" class="form-label" >
+            Functie    <span class="star">*</span>
+            <input id="functie" type="text" required aria-required="true"/>
         </label>
-        <label for="email" class="form-label">
-            E-mail*
+        <label for="email" class="form-label"  >
+            E-mail    <span class="star">*</span>
             <input id="email" type="email"/>
         </label>
-        <label for="Mobiel" class="form-label">
-            Mobiel*
-            <input id="Mobiel"  type="tel"/>
+        <label for="Mobiel" class="form-label" >
+            Mobiel    <span class="star">*</span>
+            <input id="Mobiel"  type="tel" required aria-required="true"/>
         </label>
-        <label for="Bedrijfsnaam" class="form-label">
-            Bedrijfsnaam*
-            <input id="Bedrijfsnaam"  type="text"/>
+        <label for="Bedrijfsnaam" class="form-label" >
+            Bedrijfsnaam    <span class="star">*</span>
+            <input id="Bedrijfsnaam"  type="text" required aria-required="true"/>
         </label>
         <label for="Bedrijfswebsite" class="form-label">
-            Bedrijfswebsite*
-            <input id="Bedrijfswebsite"    type="text"/>
+            Bedrijfswebsite  <span class="star">*</span>
+            <input id="Bedrijfswebsite"    type="text" required aria-required="true" />
         </label>
 
 
-        <label for="ik-wil-graag-lid-worden-omdat" class="form-label ">
-            ik wil graag lid worden omdat*
-            <textarea id="ik-wil-graag-lid-worden-omdat">
+        <label for="ik-wil-graag-lid-worden-omdat" class="form-label " >
+            ik wil graag lid worden omdat    <span class="star">*</span>
+            <textarea id="ik-wil-graag-lid-worden-omdat" required aria-required="true">
 
             </textarea>
         </label>
         <label for="FTE">
-            FTE*
-            <select id="FTE" >
+            FTE    <span class="star">*</span>
+            <select id="FTE" required aria-required="true" >
                 <option value="1-9">
                     1-9
                 </option>
@@ -74,3 +73,11 @@
         <TextButton/>
     </fieldset>
 </form>
+
+<style>
+    .star{
+        /*position: absolute;*/
+        /*left: -999px;*/
+        /*top: 0;*/
+    }
+</style>

@@ -2,7 +2,7 @@
     import Form from '$lib/Form.svelte'
 
 </script>
-
+<h1>inschrijven</h1>
 <Form/>
 
 <!--<h1>Welcome to your library project</h1>-->
