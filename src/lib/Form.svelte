@@ -53,7 +53,7 @@
 
 
         <label for="ik-wil-graag-lid-worden-omdat" class="form-label input-textfield" >
-            ik wil graag lid worden omdat*
+            Ik wil graag lid worden omdat*
             <!--            <span class="star">*</span>-->
             <textarea id="ik-wil-graag-lid-worden-omdat" class="Mandatory" required aria-required="true">
 
