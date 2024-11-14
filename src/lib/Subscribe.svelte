@@ -1,5 +1,5 @@
 <div class="div-styling">
-    <a href="bedankt" class="button">Schrijf me in</a>  <svg
+    <a href="/bedankt" class="button">Schrijf me in</a>  <svg
         width="16"
         height="16"
         viewBox="0 0 16 16"
@@ -42,5 +42,8 @@
         border: 1px solid #666666;
         padding: 0.58rem;
         margin-bottom: -0.8rem;
+    }
+    .button:hover{
+        color: var(--blue);
     }
 </style>
