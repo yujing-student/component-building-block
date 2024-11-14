@@ -39,10 +39,7 @@
     }
     svg{
         border: 1px solid #666666;
+        padding: 0.58rem;
         margin-bottom: -0.8rem;
-        width: 22px;
-        height: 2.3rem;
-        /* padding: 0px; */
-        /* margin: 0px; */
     }
 </style>
