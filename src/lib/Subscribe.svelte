@@ -1,5 +1,5 @@
 <div class="div-styling">
-    <a href="/bedankt" class="button">Schrijf me in</a>  <svg
+    <a href="/bedankt" class="button">Schrijf me in <svg aria-label="pijltje ga naar schrijf me in"
         width="16"
         height="16"
         viewBox="0 0 16 16"
@@ -20,6 +20,7 @@
             stroke-linejoin="round"
     />
 </svg>
+    </a>
 </div>
 
 
@@ -32,11 +33,11 @@
         border-left: 1px solid #666666;
         border-top: 1px solid #666666;
         border-bottom: 1px solid #666666;
-        width: 6rem;
-        padding: 0.55rem;
         margin-right: -0.3rem;
         color: #666666;
         text-decoration: none;
+        padding: 0.55rem 0 0.55rem 0.55rem;
+
     }
     svg{
         border: 1px solid #666666;
