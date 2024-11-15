@@ -1,3 +1,10 @@
+
+link figma file met daarin de breakdownschets mijn component is het inschrijfformulier 
+
+https://www.figma.com/design/42reO3hhIYuIIRIxwdmX5Q/schets-sprint-16-component?node-id=0-1 
+
+het project wat ik heb is dda 
+
 # create-svelte
 
 Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
