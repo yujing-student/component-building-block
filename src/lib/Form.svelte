@@ -1,4 +1,3 @@
-
 <script>
     import TextButton from '$lib/Subscribe.svelte'
 </script>
