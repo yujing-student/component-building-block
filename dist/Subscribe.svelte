@@ -41,11 +41,9 @@
 
     }
     svg{
-        /* border: 1px solid var(--grey); */
-        padding: 0.66rem;
+        border: 1px solid var(--grey);
+        padding: 0.58rem;
         margin-bottom: -0.8rem;
-        border-right: 1px solid;
-        border-left: 1px solid;
     }
     .button:hover{
         color: var(--blue);
