@@ -1,5 +1,7 @@
 <script>
     import TextButton from '$lib/Subscribe.svelte'
+
+
 </script>
 <h1>INSCHRIJVEN</h1>
 
@@ -118,27 +120,32 @@
 
 
     /*ui states*/
-    /*.Mandatory:invalid {*/
-    /*    border-bottom: 1.5px solid red;*/
-    /*}*/
+    .Mandatory:invalid {
+        border-bottom: 1.5px solid red;
+    }
 
-    /*.Mandatory:valid {*/
-    /*    border-bottom: 1.5px solid green;*/
-    /*}*/
+    .Mandatory:valid {
+        border-bottom: 1.5px solid green;
+    }
 
     input::placeholder{
         color: var(--blue);
     }
-    input:hover {
-        color: var(--black);
+
+    input[type='email']:invalid{
+        border-bottom: 1.5px solid red;
+    }
+    input:focus{
+        outline: 2px solid var(--blue);
+    }
+    textarea:focus{
+        outline: 2px solid var(--blue);
+    }
+    textarea:invalid{
+        outline: 2px solid red;
     }
 
-    input:focus,
-    textarea:focus,
-    select:focus,
-    input:focus {
-        outline: 2px solid var(--blue); /* Adjust the color and width as needed */
-    }
+
     @media (max-width: 700px) {
         .form-label {
             margin-top: 1.8rem;
