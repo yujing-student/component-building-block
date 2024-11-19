@@ -12,58 +12,58 @@
         <label for="functie" class="form-label" >
             Functie*
             <!--            <span class="star">*</span>-->
-            <input id="functie" class="Mandatory" type="text" required aria-required="true"/>
+            <input id="functie" class="Mandatory" type="text" placeholder="" required aria-required="true"/>
         </label>
         <label for="Voornaam" class="form-label" >Voornaam*
             <!--            <span class="star">*</span>-->
-            <input id="Voornaam" class="Mandatory" type="text" required aria-required="true"
+            <input id="Voornaam" class="Mandatory" type="text" placeholder="" required aria-required="true"
             />
         </label>
         <label for="Tussenvoegsel" class="form-label" >
             Tussenvoegsel
-            <input id="Tussenvoegsel" type="text"/>
+            <input id="Tussenvoegsel" type="text" placeholder=""/>
         </label>
         <label for="Achternaam" class="form-label" >
             Achternaam*
             <!--            <span class="star">*</span>-->
-            <input id="Achternaam" class="Mandatory"  type="text" required aria-required="true"/>
+            <input id="Achternaam" class="Mandatory" placeholder="" type="text" required aria-required="true"/>
         </label>
 
         <label for="email" class="form-label"  >
             E-mail*
             <!--            <span class="star">*</span>-->
-            <input id="email"  class="Mandatory" type="email"/>
+            <input id="email"  class="Mandatory" placeholder="" type="email"/>
         </label>
         <label for="Mobiel" class="form-label" >
             Mobiel*
             <!--            <span class="star">*</span>-->
-            <input id="Mobiel"  type="tel" class="Mandatory"
+            <input id="Mobiel"  type="tel" placeholder="" class="Mandatory"
                    required
                    aria-required="true"/>
         </label>
         <label for="Bedrijfsnaam" class="form-label" >
             Bedrijfsnaam*
             <!--            <span class="star">*</span>-->
-            <input id="Bedrijfsnaam" class="Mandatory" type="text" required aria-required="true"/>
+            <input id="Bedrijfsnaam" class="Mandatory" placeholder="" type="text" required aria-required="true"/>
         </label>
         <label for="Bedrijfswebsite" class="form-label ">
             Bedrijfswebsite*
             <!--            <span class="star">*</span>-->
-            <input id="Bedrijfswebsite"  class="Mandatory"  type="text" required aria-required="true" />
+            <input id="Bedrijfswebsite"  class="Mandatory" placeholder="" type="text" required aria-required="true" />
         </label>
 
 
         <label for="ik-wil-graag-lid-worden-omdat" class="form-label input-textfield" >
             Ik wil graag lid worden omdat*
             <!--            <span class="star">*</span>-->
-            <textarea id="ik-wil-graag-lid-worden-omdat" class="Mandatory" required aria-required="true">
+            <textarea id="ik-wil-graag-lid-worden-omdat" placeholder="" class="Mandatory" required aria-required="true">
 
             </textarea>
         </label>
         <label for="FTE" class="dropown">
             FTE*
             <!--            <span class="star">*</span>-->
-            <select id="FTE" required aria-required="true"  class="Mandatory">
+            <select id="FTE" required aria-required="true"  placeholder="" class="Mandatory">
                 <option value="1-9">
                     1-9
                 </option>
@@ -120,31 +120,50 @@
 
 
     /*ui states*/
-    .Mandatory:invalid {
-        border-bottom: 1.5px solid red;
-    }
+    /*.Mandatory:invalid {*/
+    /*    border-bottom: 1.5px solid red;*/
+    /*}*/
 
-    .Mandatory:valid {
-        border-bottom: 1.5px solid green;
-    }
+    /*.Mandatory:valid {*/
+    /*    border-bottom: 1.5px solid green;*/
+    /*}*/
 
-    input::placeholder{
-        color: var(--blue);
-    }
+    /*input::placeholder{*/
+    /*    color: var(--blue);*/
+    /*}*/
 
-    input[type='email']:invalid{
-        border-bottom: 1.5px solid red;
-    }
+    /*input[type='email']:invalid{*/
+    /*    border-bottom: 1.5px solid red;*/
+    /*}*/
     input:focus{
         outline: 2px solid var(--blue);
     }
     textarea:focus{
         outline: 2px solid var(--blue);
     }
-    textarea:invalid{
-        outline: 2px solid red;
+    /*textarea:invalid{*/
+    /*    outline: 2px solid red;*/
+    /*}*/
+
+
+    input:invalid:not(:placeholder-shown) {
+        border: 1px solid red;
     }
 
+    input:invalid:not(:placeholder-shown) + p {
+        color: red;
+    }
+    input:valid {
+        border: 1px solid green;
+    }
+
+    input:invalid ~ button[type="submit"] {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+
+    /*https://codepen.io/adhikareeprayush/details/vYoYPXV*/
+    /*bron sourche code*/
 
     @media (max-width: 700px) {
         .form-label {
