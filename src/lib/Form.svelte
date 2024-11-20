@@ -32,7 +32,8 @@
         <label for="email" class="form-label"  >
             E-mail*
             <!--            <span class="star">*</span>-->
-            <input id="email"  class="Mandatory" placeholder="" type="email"/>
+            <input id="email"  class="Mandatory" placeholder="Enter email..." type="email"/>
+
         </label>
         <label for="Mobiel" class="form-label" >
             Mobiel*
@@ -147,15 +148,29 @@
 
 
     input:invalid:not(:placeholder-shown) {
-        border: 1px solid red;
+        border-bottom: 1px solid red;
     }
 
     input:invalid:not(:placeholder-shown) + p {
         color: red;
     }
-    input:valid {
-        border: 1px solid green;
+    /*input [type="email"]:valid {*/
+    /*    border: 1px solid green;*/
+    /*}*/
+
+    input:valid{
+        border-bottom: green 1px solid;
     }
+
+    input:invalid ~ button[type="submit"] {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+
+
+
+
+
 
     input:invalid ~ button[type="submit"] {
         pointer-events: none;
