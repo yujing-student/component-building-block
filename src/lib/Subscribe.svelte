@@ -1,5 +1,5 @@
 <div class="div-styling">
-    <a href="/bedankt" class="button">SCHRIJF MIJ IN <svg aria-label="pijltje ga naar schrijf me in"
+    <button  class="button">SCHRIJF MIJ IN <svg aria-label="pijltje ga naar schrijf me in"
         width="16"
         height="16"
         viewBox="0 0 16 16"
@@ -22,7 +22,7 @@
 </svg>
 
 <!--        button gebruiken met submit -->
-    </a>
+    </button>
 </div>
 
 
@@ -41,6 +41,7 @@
         color: var(--black);
         text-decoration: none;
         padding: 0.55rem 0 0.55rem 0.55rem;
+        background-color: transparent;
 
     }
     svg{
