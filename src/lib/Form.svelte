@@ -5,8 +5,12 @@
 </script>
 <h1>INSCHRIJVEN</h1>
 
+<!--todo meer structuur toevoegen in de css-->
+<!--todo een button en geen a-->
 
 <form >
+<!--    todo de form moet een action hebben -->
+<!--     todo met css steertetje maken befoe en after -->
     <fieldset>
         <legend>persoonlijke gegevens</legend>
         <label for="functie" class="form-label" >
