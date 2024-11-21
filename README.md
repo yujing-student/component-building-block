@@ -1,3 +1,12 @@
+https://component-building-block.vercel.app/
+
+ik ben trots op het feit dat ik het design bijna hetzelfde is zoals in het figma design
+
+Ik wil feedback 
+
+je drukt op de groene knop code en dan 
+
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
