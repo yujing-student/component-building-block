@@ -8,7 +8,7 @@
 <!--todo meer structuur toevoegen in de css-->
 <!--todo een button en geen a-->
 
-<form >
+<form action="/bedankt">
 <!--    todo de form moet een action hebben -->
 <!--     todo met css steertetje maken befoe en after -->
     <fieldset>
