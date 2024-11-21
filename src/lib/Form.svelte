@@ -184,72 +184,72 @@
     /*https://codepen.io/adhikareeprayush/details/vYoYPXV*/
     /*bron sourche code*/
 
-    /*@media (max-width: 700px) {*/
-    /*    .form-label {*/
-    /*        margin-top: 1.8rem;*/
-    /*        display: flex;*/
-    /*        flex-direction: column;*/
-    /*        justify-content: center;*/
-    /*        width: 100%;*/
-    /*        border-bottom: 1.5px solid var(--black);*/
-    /*    }*/
-    /*}*/
-
-    /*@media (min-width: 800px) {*/
-    /*    fieldset {*/
-    /*        display: grid;*/
-    /*        grid-template-columns: auto auto;*/
-    /*        !*background-color: red;*!*/
-    /*        max-width: 700px;*/
-    /*        gap: 1rem;*/
-    /*    }*/
-    /*    .input-textfield{*/
-    /*        grid-row: 6;*/
-    /*        grid-column-start: 1;*/
-    /*        grid-column-end: 3;*/
-    /*    }*/
-    /*    .dropown{*/
-    /*        grid-row: 7;*/
-    /*    }*/
-    /*}*/
-
-
-    /*todo dit moet een fieldset worden met 2 rijen*/
-    .form-label {
-        container-name: main;
-        container-type: inline-size;
-    }
-    @container main (max-width: 700px) {
+    @media (max-width: 700px) {
         .form-label {
             margin-top: 1.8rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            border-bottom: 1.5px solid black;
+            border-bottom: 1.5px solid var(--black);
         }
     }
 
-    @container main (min-width: 700px) {
-        .form-label {
-           display: grid;
-            grid-template-columns: auto auto;
-            background-color: red;
-
-        }
-    }
-
-
-    @container main (min-width: 1100px) {
-        .form-label {
-            margin-top: 1.8rem;
+    @media (min-width: 800px) {
+        fieldset {
             display: grid;
             grid-template-columns: auto auto;
-            justify-content: center;
-            width: 100%;
-            border-bottom: 1.5px solid black;
+            /*background-color: red;*/
+            max-width: 700px;
+            gap: 1rem;
+        }
+        .input-textfield{
+            grid-row: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .dropown{
+            grid-row: 7;
         }
     }
+
+
+    /*!*todo dit moet een fieldset worden met 2 rijen*!*/
+    /*.form-label {*/
+    /*    container-name: main;*/
+    /*    container-type: inline-size;*/
+    /*}*/
+    /*@container main (max-width: 700px) {*/
+    /*    .form-label {*/
+    /*        margin-top: 1.8rem;*/
+    /*        display: flex;*/
+    /*        flex-direction: column;*/
+    /*        justify-content: center;*/
+    /*        width: 100%;*/
+    /*        border-bottom: 1.5px solid black;*/
+    /*    }*/
+    /*}*/
+
+    /*@container main (min-width: 700px) {*/
+    /*    .form-label {*/
+    /*       display: grid;*/
+    /*        grid-template-columns: auto auto;*/
+    /*        background-color: red;*/
+
+    /*    }*/
+    /*}*/
+
+
+    /*@container main (min-width: 1100px) {*/
+    /*    .form-label {*/
+    /*        margin-top: 1.8rem;*/
+    /*        display: grid;*/
+    /*        grid-template-columns: auto auto;*/
+    /*        justify-content: center;*/
+    /*        width: 100%;*/
+    /*        border-bottom: 1.5px solid black;*/
+    /*    }*/
+    /*}*/
 
 </style>
 
