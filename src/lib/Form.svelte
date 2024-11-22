@@ -1,14 +1,19 @@
 <script>
-    import TextButton from '$lib/Subscribe.svelte'
+    import TextButton from '$lib/Subscribe.svelte';
+    import { onMount } from 'svelte';
 
 
+    // onMount(() => {
+    //     document.querySelector("form").addEventListener("submit", function(event) {
+    //         event.preventDefault(); // Prevent the default form submission
+    // });
 </script>
 <h1>INSCHRIJVEN</h1>
 
 <!--todo meer structuur toevoegen in de css-->
 <!--todo een button en geen a-->
-
 <form action="/bedankt">
+
 <!--    todo de form moet een action hebben -->
 <!--     todo met css steertetje maken befoe en after -->
     <fieldset>
@@ -150,37 +155,38 @@
     /*    outline: 2px solid red;*/
     /*}*/
 
-
     input:invalid:not(:placeholder-shown) {
         border-bottom: 1px solid red;
     }
 
-    input:invalid:not(:placeholder-shown) + p {
-        color: red;
-    }
-    /*input [type="email"]:valid {*/
-    /*    border: 1px solid green;*/
+    /*input:invalid:not(:placeholder-shown) + p {*/
+    /*    color: red;*/
     /*}*/
 
-    input:valid{
-        border-bottom: green 1px solid;
+    /*input[type='text']:valid,*/
+
+
+    input[type='email']:valid,
+    input[type='tel']:valid,
+    textarea:valid {
+        border-bottom: 5px solid green;
     }
+
+    input[type='text']:user-invalid,
+    input[type='email']:user-invalid,
+    textarea:user-invalid {
+        border-bottom: 1px solid red;
+        /* background: #FFEFEF; */
+    }
+
+    /*input:valid{*/
+    /*    border-bottom: green 1px solid;*/
+    /*}*/
 
     input:invalid ~ button[type="submit"] {
         pointer-events: none;
         opacity: 0.7;
     }
-
-
-
-
-
-
-    input:invalid ~ button[type="submit"] {
-        pointer-events: none;
-        opacity: 0.7;
-    }
-
     /*https://codepen.io/adhikareeprayush/details/vYoYPXV*/
     /*bron sourche code*/
 
