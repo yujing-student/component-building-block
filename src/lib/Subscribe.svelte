@@ -35,21 +35,23 @@
     }
     .button{
         border-left: 1px solid var(--grey);
+        border-right: 1px solid var(--grey);
         border-top: 1px solid var(--grey);
         border-bottom: 1px solid var(--grey);
         margin-right: -0.3rem;
         color: var(--black);
         text-decoration: none;
-        padding: 0.55rem 0 0.55rem 0.55rem;
+        padding: 0px 0.2rem 0.4rem 0.4rem;
         background-color: transparent;
 
     }
     svg{
         /* border: 1px solid var(--grey); */
-        padding: 0.66rem;
-        margin-bottom: -0.8rem;
-        border-right: 1px solid;
-        border-left: 1px solid;
+        /* padding: 0.66rem; */
+        margin-bottom: -0.6rem;
+        /* border-right: 1px solid; */
+        border-left: 1px solid var(--grey);
+        padding: 0.2rem 0.2rem 0.4rem 0.4em;
     }
     .button:hover{
         color: var(--blue);
