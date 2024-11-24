@@ -114,7 +114,6 @@
     label {
         margin-top: 1.8rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         width: 100%;
         border-bottom: 1.5px solid var(--black);
         gap: 0.8rem;
