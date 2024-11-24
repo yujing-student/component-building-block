@@ -110,6 +110,7 @@
         top: 0;
         left: -9999px;
     }
+
     label {
         margin-top: 1.8rem;
         display: flex;
@@ -155,22 +156,14 @@
         border-bottom: 2px solid red;
     }
 
-    @media (max-width: 600px) {
-        .form-label {
-            margin-top: 1.8rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            border-bottom: 1.5px solid var(--black);
-        }
+    form {
+        container-type: inline-size;
     }
 
-    @media (min-width: 600px) {
+    @container  (min-width: 600px) {
         fieldset {
             display: grid;
             grid-template-columns: auto auto;
-            /*background-color: red;*/
             max-width: 700px;
             gap: 1rem;
         }
@@ -185,44 +178,6 @@
             grid-row: 7;
         }
     }
-
-
-    /*!*todo dit moet een fieldset worden met 2 rijen*!*/
-    /*.form-label {*/
-    /*    container-name: main;*/
-    /*    container-type: inline-size;*/
-    /*}*/
-    /*@container main (max-width: 700px) {*/
-    /*    .form-label {*/
-    /*        margin-top: 1.8rem;*/
-    /*        display: flex;*/
-    /*        flex-direction: column;*/
-    /*        justify-content: center;*/
-    /*        width: 100%;*/
-    /*        border-bottom: 1.5px solid black;*/
-    /*    }*/
-    /*}*/
-
-    /*@container main (min-width: 700px) {*/
-    /*    .form-label {*/
-    /*       display: grid;*/
-    /*        grid-template-columns: auto auto;*/
-    /*        background-color: red;*/
-
-    /*    }*/
-    /*}*/
-
-
-    /*@container main (min-width: 1100px) {*/
-    /*    .form-label {*/
-    /*        margin-top: 1.8rem;*/
-    /*        display: grid;*/
-    /*        grid-template-columns: auto auto;*/
-    /*        justify-content: center;*/
-    /*        width: 100%;*/
-    /*        border-bottom: 1.5px solid black;*/
-    /*    }*/
-    /*}*/
 
 </style>
 
