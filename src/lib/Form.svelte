@@ -15,12 +15,12 @@
     <fieldset>
         <legend>persoonlijke gegevens</legend>
         <label class="form-label" for="functie">
-            Functie*
-            <!--            <span class="star">*</span>-->
+
+                        <span class="star">       Functie</span>
             <input aria-required="true" id="functie" required type="text"/>
         </label>
-        <label class="form-label" for="Voornaam">Voornaam*
-            <!--            <span class="star">*</span>-->
+        <label class="form-label" for="Voornaam">
+                        <span class="star">Voornaam</span>
             <input aria-required="true" id="Voornaam" required type="text"
             />
         </label>
@@ -29,45 +29,45 @@
             <input id="Tussenvoegsel" type="text"/>
         </label>
         <label class="form-label" for="Achternaam">
-            Achternaam*
-            <!--            <span class="star">*</span>-->
+
+            <span class="star">Achternaam</span>
             <input aria-required="true" id="Achternaam" required type="text"/>
         </label>
 
         <label class="form-label" for="email">
-            E-mail*
-            <!--            <span class="star">*</span>-->
+
+                        <span class="star">E-mail</span>
             <input aria-required="true" id="email" required type="email"/>
 
         </label>
         <label class="form-label" for="Mobiel">
-            Mobiel*
-            <!--            <span class="star">*</span>-->
+
+                        <span class="star">  Mobiel</span>
             <input aria-required="true" id="Mobiel"
                    required
                    type="tel"/>
         </label>
         <label class="form-label" for="Bedrijfsnaam">
-            Bedrijfsnaam*
-            <!--            <span class="star">*</span>-->
+
+                        <span class="star">Bedrijfsnaam</span>
             <input aria-required="true" id="Bedrijfsnaam" required type="text"/>
         </label>
         <label class="form-label " for="Bedrijfswebsite">
-            Bedrijfswebsite*
-            <!--            <span class="star">*</span>-->
+
+                        <span class="star">Bedrijfswebsite</span>
             <input aria-required="true" id="Bedrijfswebsite" required type="text"/>
         </label>
 
 
         <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
-            Ik wil graag lid worden omdat*
+                  <span class="star">Ik wil graag lid worden omdat </span>
             <textarea aria-required="true" cols="5" id="ik-wil-graag-lid-worden-omdat" required rows="1">
   </textarea>
         </label>
 
         <label class="dropown" for="FTE">
-            FTE*
-            <!--            <span class="star">*</span>-->
+
+                        <span class="star">      FTE</span>
             <select aria-required="true" id="FTE" required>
                 <option disabled hidden selected value="-1"></option>
                 <option value="1-9">
@@ -113,12 +113,21 @@
 
     label {
         margin-top: 1.8rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         width: 100%;
         border-bottom: 1.5px solid var(--black);
         gap: 0.8rem;
+    }
+    span{
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+    input{
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
     input, textarea, select {
@@ -128,6 +137,13 @@
 
     textarea {
         height: auto;
+    }
+
+    .star:after{
+        content: "*";
+        font-size: 2rem;
+        color: red;
+
     }
 
 
