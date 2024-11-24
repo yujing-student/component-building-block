@@ -45,15 +45,17 @@
         background-color: transparent;
 
     }
-    svg{
-        /* border: 1px solid var(--grey); */
-        /* padding: 0.66rem; */
-        margin-bottom: -0.6rem;
-        /* border-right: 1px solid; */
-        border-left: 1px solid var(--grey);
-        padding: 0.2rem 0.2rem 0.4rem 0.4em;
-    }
     .button:hover{
         color: var(--blue);
     }
+
+    button:focus {
+        outline: 2px solid var(--blue);
+    }
+    svg{
+        margin-bottom: -0.6rem;
+        border-left: 1px solid var(--grey);
+        padding: 0.2rem 0.2rem 0.4rem 0.4em;
+    }
+
 </style>

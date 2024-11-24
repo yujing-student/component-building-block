@@ -1,12 +1,8 @@
 <script>
     import TextButton from '$lib/Subscribe.svelte';
-    import { onMount } from 'svelte';
+    import {onMount} from 'svelte';
 
-
-    // onMount(() => {
-    //     document.querySelector("form").addEventListener("submit", function(event) {
-    //         event.preventDefault(); // Prevent the default form submission
-    // });
+    //     todo met javascript verplicht maken van de fte en de texteare
 </script>
 <h1>INSCHRIJVEN</h1>
 
@@ -14,66 +10,66 @@
 <!--todo een button en geen a-->
 <form action="/bedankt">
 
-<!--    todo de form moet een action hebben -->
-<!--     todo met css steertetje maken befoe en after -->
+    <!--    todo de form moet een action hebben -->
+    <!--     todo met css steertetje maken befoe en after -->
     <fieldset>
         <legend>persoonlijke gegevens</legend>
-        <label for="functie" class="form-label" >
+        <label class="form-label" for="functie">
             Functie*
             <!--            <span class="star">*</span>-->
-            <input id="functie" class="Mandatory" type="text" placeholder="" required aria-required="true"/>
+            <input aria-required="true" id="functie" required type="text"/>
         </label>
-        <label for="Voornaam" class="form-label" >Voornaam*
+        <label class="form-label" for="Voornaam">Voornaam*
             <!--            <span class="star">*</span>-->
-            <input id="Voornaam" class="Mandatory" type="text" placeholder="" required aria-required="true"
+            <input aria-required="true" id="Voornaam" required type="text"
             />
         </label>
-        <label for="Tussenvoegsel" class="form-label" >
+        <label class="form-label" for="Tussenvoegsel">
             Tussenvoegsel
-            <input id="Tussenvoegsel" type="text" placeholder=""/>
+            <input id="Tussenvoegsel" type="text"/>
         </label>
-        <label for="Achternaam" class="form-label" >
+        <label class="form-label" for="Achternaam">
             Achternaam*
             <!--            <span class="star">*</span>-->
-            <input id="Achternaam" class="Mandatory" placeholder="" type="text" required aria-required="true"/>
+            <input aria-required="true" id="Achternaam" required type="text"/>
         </label>
 
-        <label for="email" class="form-label"  >
+        <label class="form-label" for="email">
             E-mail*
             <!--            <span class="star">*</span>-->
-            <input id="email"  class="Mandatory" placeholder="Enter email..." type="email"/>
+            <input aria-required="true" id="email" required type="email"/>
 
         </label>
-        <label for="Mobiel" class="form-label" >
+        <label class="form-label" for="Mobiel">
             Mobiel*
             <!--            <span class="star">*</span>-->
-            <input id="Mobiel"  type="tel" placeholder="" class="Mandatory"
+            <input aria-required="true" id="Mobiel"
                    required
-                   aria-required="true"/>
+                   type="tel"/>
         </label>
-        <label for="Bedrijfsnaam" class="form-label" >
+        <label class="form-label" for="Bedrijfsnaam">
             Bedrijfsnaam*
             <!--            <span class="star">*</span>-->
-            <input id="Bedrijfsnaam" class="Mandatory" placeholder="" type="text" required aria-required="true"/>
+            <input aria-required="true" id="Bedrijfsnaam" required type="text"/>
         </label>
-        <label for="Bedrijfswebsite" class="form-label ">
+        <label class="form-label " for="Bedrijfswebsite">
             Bedrijfswebsite*
             <!--            <span class="star">*</span>-->
-            <input id="Bedrijfswebsite"  class="Mandatory" placeholder="" type="text" required aria-required="true" />
+            <input aria-required="true" id="Bedrijfswebsite" required type="text"/>
         </label>
 
 
-        <label for="ik-wil-graag-lid-worden-omdat" class="form-label input-textfield" >
+        <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
             Ik wil graag lid worden omdat*
-            <!--            <span class="star">*</span>-->
-            <textarea id="ik-wil-graag-lid-worden-omdat" placeholder="" class="Mandatory" required aria-required="true">
-
-            </textarea>
+            <textarea aria-required="true" cols="5" id="ik-wil-graag-lid-worden-omdat" required rows="1">
+  </textarea>
         </label>
-        <label for="FTE" class="dropown">
+
+        <label class="dropown" for="FTE">
             FTE*
             <!--            <span class="star">*</span>-->
-            <select id="FTE" required aria-required="true"  placeholder="" class="Mandatory">
+            <select aria-required="true" id="FTE" required>
+                <option disabled hidden selected value="-1"></option>
                 <option value="1-9">
                     1-9
                 </option>
@@ -100,23 +96,19 @@
 </form>
 
 <style>
-    form{
+
+    form {
         color: var(--grey);
     }
-    fieldset{
+
+    fieldset {
         border: none;
     }
-    legend{
+
+    legend {
         position: absolute;
         top: 0;
         left: -9999px;
-    }
-    textarea{
-        height: auto;
-    }
-    input,textarea, select{
-
-        border: none;
     }
     label {
         margin-top: 1.8rem;
@@ -128,69 +120,42 @@
         gap: 0.8rem;
     }
 
+    input, textarea, select {
+        border: none;
+    }
+
+
+    textarea {
+        height: auto;
+    }
+
 
     /*ui states*/
-    /*.Mandatory:invalid {*/
-    /*    border-bottom: 1.5px solid red;*/
-    /*}*/
-
-    /*.Mandatory:valid {*/
-    /*    border-bottom: 1.5px solid green;*/
-    /*}*/
-
-    /*input::placeholder{*/
-    /*    color: var(--blue);*/
-    /*}*/
-
-    /*input[type='email']:invalid{*/
-    /*    border-bottom: 1.5px solid red;*/
-    /*}*/
-    input:focus{
+    input:focus, textarea:focus, select:focus, option:focus {
         outline: 2px solid var(--blue);
     }
-    textarea:focus{
-        outline: 2px solid var(--blue);
-    }
-    /*textarea:invalid{*/
-    /*    outline: 2px solid red;*/
-    /*}*/
 
-    input:invalid:not(:placeholder-shown) {
-        border-bottom: 1px solid red;
+    textarea {
+        width: 100%; /* Make it full width */
     }
 
-    /*input:invalid:not(:placeholder-shown) + p {*/
-    /*    color: red;*/
-    /*}*/
-
-    /*input[type='text']:valid,*/
-
-
-    input[type='email']:valid,
-    input[type='tel']:valid,
-    textarea:valid {
-        border-bottom: 5px solid green;
+    input[type="email"]:user-invalid, input:user-invalid, textarea:user-invalid, select:user-invalid {
+        border-bottom: 2px solid red;
     }
 
-    input[type='text']:user-invalid,
-    input[type='email']:user-invalid,
-    textarea:user-invalid {
-        border-bottom: 1px solid red;
-        /* background: #FFEFEF; */
+    select:user-valid, textarea:user-valid, input:user-valid {
+        border-bottom: 2px solid green;
     }
 
-    /*input:valid{*/
-    /*    border-bottom: green 1px solid;*/
-    /*}*/
-
-    input:invalid ~ button[type="submit"] {
-        pointer-events: none;
-        opacity: 0.7;
+    select:invalid {
+        border-bottom: 2px solid red;
     }
-    /*https://codepen.io/adhikareeprayush/details/vYoYPXV*/
-    /*bron sourche code*/
 
-    @media (max-width: 700px) {
+    textarea:invalid {
+        border-bottom: 2px solid red;
+    }
+
+    @media (max-width: 600px) {
         .form-label {
             margin-top: 1.8rem;
             display: flex;
@@ -201,7 +166,7 @@
         }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 600px) {
         fieldset {
             display: grid;
             grid-template-columns: auto auto;
@@ -209,12 +174,14 @@
             max-width: 700px;
             gap: 1rem;
         }
-        .input-textfield{
+
+        .input-textfield {
             grid-row: 6;
             grid-column-start: 1;
             grid-column-end: 3;
         }
-        .dropown{
+
+        .dropown {
             grid-row: 7;
         }
     }
