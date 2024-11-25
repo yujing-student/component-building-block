@@ -2,11 +2,11 @@
     import TextButton from '$lib/Subscribe.svelte';
     import {onMount} from 'svelte';
 
-    const texteare = document.querySelector('textarea');
-    const select = document.querySelector('select');
+    // const texteare = document.querySelector('textarea');
+    // const select = document.querySelector('select');
 
     // als het input field leeg is voeg een border-bottom toe met add class
-    //
+    //event prevault
     //     todo met javascript verplicht maken van de fte en de texteare
 </script>
 <h1>INSCHRIJVEN</h1>
@@ -158,19 +158,20 @@
     }
 
     input[type="email"]:user-invalid, input:user-invalid, textarea:user-invalid, select:user-invalid {
-        border-bottom: 2px solid red;
+        /*border-bottom: 3px solid red;*/
+        outline: 3px solid red;
     }
 
     select:user-valid, textarea:user-valid, input:user-valid {
-        border-bottom: 2px solid green;
+        outline: 2px solid green;
     }
 
     select:invalid {
-        border-bottom: 2px solid red;
+        outline: 2px solid red;
     }
 
     textarea:invalid {
-        border-bottom: 2px solid red;
+        outline: 2px solid red;
     }
 
     form {
