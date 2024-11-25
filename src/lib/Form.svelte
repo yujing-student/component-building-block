@@ -24,11 +24,11 @@
         <legend>persoonlijke gegevens</legend>
         <label class="form-label" for="functie">
 
-                        <span class="star">       Functie</span>
+            <span class="star">       Functie</span>
             <input aria-required="true" id="functie" required type="text"/>
         </label>
         <label class="form-label" for="Voornaam">
-                        <span class="star">Voornaam</span>
+            <span class="star">Voornaam</span>
             <input aria-required="true" id="Voornaam" required type="text"
             />
         </label>
@@ -44,40 +44,42 @@
 
         <label class="form-label" for="email">
 
-                        <span class="star">E-mail</span>
+            <span class="star">E-mail</span>
             <input aria-required="true" id="email" required type="email"/>
 
         </label>
         <label class="form-label" for="Mobiel">
 
-                        <span class="star">  Mobiel</span>
+            <span class="star">  Mobiel</span>
             <input aria-required="true" id="Mobiel"
                    required
                    type="number"/>
         </label>
         <label class="form-label" for="Bedrijfsnaam">
 
-                        <span class="star">Bedrijfsnaam</span>
+            <span class="star">Bedrijfsnaam</span>
             <input aria-required="true" id="Bedrijfsnaam" required type="text"/>
         </label>
         <label class="form-label " for="Bedrijfswebsite">
 
-                        <span class="star">Bedrijfswebsite</span>
+            <span class="star">Bedrijfswebsite</span>
             <input aria-required="true" id="Bedrijfswebsite" required type="text"/>
         </label>
 
 
         <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
-                  <span class="star">Ik wil graag lid worden omdat </span>
+            <span class="star">Ik wil graag lid worden omdat </span>
 
 
-            <textarea  cols="5" rows="1" placeholder="" aria-required="true"
-                       required></textarea>
+            <textarea aria-required="true" cols="5" placeholder="" required
+                      rows="1"></textarea>
         </label>
 
         <label class="dropown" for="FTE">
 
-                        <span class="star">      FTE</span>
+            <span class="star">      FTE</span>
+
+<!--todo uitzoeken hoe je een false state kan doen -->
             <select aria-required="true" id="FTE" required>
                 <option disabled hidden selected value="-1"></option>
                 <option value="1-9">
@@ -128,12 +130,14 @@
         border-bottom: 1.5px solid var(--black);
         gap: 0.8rem;
     }
-    span{
+
+    span {
         grid-row: 1;
         grid-column: 1;
 
     }
-    input{
+
+    input {
         grid-row: 2;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -148,7 +152,7 @@
         height: auto;
     }
 
-    .star:after{
+    .star:after {
         content: "*";
         font-size: 2rem;
         color: red;
@@ -165,39 +169,13 @@
         width: 100%; /* Make it full width */
     }
 
-    /*input[type="email"]:user-invalid, input:user-invalid {*/
-    /*    !*border-bottom: 3px solid red;*!*/
-    /*    outline: 3px solid red;*/
-    /*}*/
-
-    /*input:user-valid {*/
-    /*    outline: 2px solid green;*/
-    /*}*/
-
-    /*select:user-invalid {*/
-    /*    outline: 2px solid red;*/
-    /*}*/
-    /*select:user-valid {*/
-    /*    outline: 2px solid green;*/
-    /*}*/
-    /*option:user-invalid {*/
-    /*    outline: 2px solid red;*/
-    /*}*/
-    /*option:user-valid {*/
-    /*    outline: 2px solid green;*/
-    /*}*/
-
-
-
     /* form focus valid  */
 
     input[type='text']:user-valid,
     input[type='email']:valid,
     input[type='number']:valid,
     textarea:valid,
-    select:user-valid,
-    option:user-valid
-    {
+    select:user-valid {
         outline: 2px solid green;
 
     }
@@ -208,33 +186,12 @@
     input[type='email']:user-invalid,
     input[type='number']:user-invalid,
     textarea:user-invalid,
-    select:user-invalid
-
-    {
+    select:user-invalid {
         outline: 2px solid red;
     }
 
-    /*textarea{*/
-    /*    border: none;*/
-    /*    padding: 0.5rem;*/
-    /*    border-radius: var(--border-card);*/
-    /*    outline: none;*/
-    /*    !* box-shadow: 0px 2px 4px hsl(32 37% 39% / 1); *!*/
-    /*    outline: 1px solid var(--input-border-color);*/
-    /*    position: relative;*/
-    /*    z-index: 100;*/
-    /*}*/
-    /*textarea:valid {*/
-    /*    outline: 2px solid green;*/
-    /*}*/
 
-    /*textarea:user-invalid {*/
-    /*    outline: 2px solid red;*/
-    /*    !* background: #FFEFEF; *!*/
-    /*}*/
-
-
-
+    /*contianer queries */
     form {
         container-type: inline-size;
     }
