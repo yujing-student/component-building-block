@@ -2,8 +2,14 @@
     import TextButton from '$lib/Subscribe.svelte';
     import {onMount} from 'svelte';
 
-    // const texteare = document.querySelector('textarea');
-    // const select = document.querySelector('select');
+    // onMount( () => {
+    //
+    //     let texteare = document.querySelector('textarea');
+    //     let select = document.querySelector('select');
+    //
+    //
+    // });
+
 
     // als het input field leeg is voeg een border-bottom toe met add class
     //event prevault
@@ -63,8 +69,10 @@
 
         <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
                   <span class="star">Ik wil graag lid worden omdat </span>
-            <textarea aria-required="true" cols="5" id="ik-wil-graag-lid-worden-omdat" required rows="1">
-  </textarea>
+
+
+            <textarea  cols="5" rows="1" placeholder="" aria-required="true"
+                       required></textarea>
         </label>
 
         <label class="dropown" for="FTE">
@@ -157,22 +165,75 @@
         width: 100%; /* Make it full width */
     }
 
-    input[type="email"]:user-invalid, input:user-invalid, textarea:user-invalid, select:user-invalid {
-        /*border-bottom: 3px solid red;*/
-        outline: 3px solid red;
-    }
+    /*input[type="email"]:user-invalid, input:user-invalid {*/
+    /*    !*border-bottom: 3px solid red;*!*/
+    /*    outline: 3px solid red;*/
+    /*}*/
 
-    select:user-valid, textarea:user-valid, input:user-valid {
+    /*input:user-valid {*/
+    /*    outline: 2px solid green;*/
+    /*}*/
+
+    /*select:user-invalid {*/
+    /*    outline: 2px solid red;*/
+    /*}*/
+    /*select:user-valid {*/
+    /*    outline: 2px solid green;*/
+    /*}*/
+    /*option:user-invalid {*/
+    /*    outline: 2px solid red;*/
+    /*}*/
+    /*option:user-valid {*/
+    /*    outline: 2px solid green;*/
+    /*}*/
+
+
+
+    /* form focus valid  */
+
+    input[type='text']:user-valid,
+    input[type='email']:valid,
+    input[type='number']:valid,
+    textarea:valid,
+    select:user-valid,
+    option:user-valid
+    {
         outline: 2px solid green;
+
     }
 
-    select:invalid {
+    /* form focus invalid */
+
+    input[type='text']:user-invalid,
+    input[type='email']:user-invalid,
+    input[type='number']:user-invalid,
+    textarea:user-invalid,
+    select:user-invalid
+
+    {
         outline: 2px solid red;
     }
 
-    textarea:invalid {
-        outline: 2px solid red;
-    }
+    /*textarea{*/
+    /*    border: none;*/
+    /*    padding: 0.5rem;*/
+    /*    border-radius: var(--border-card);*/
+    /*    outline: none;*/
+    /*    !* box-shadow: 0px 2px 4px hsl(32 37% 39% / 1); *!*/
+    /*    outline: 1px solid var(--input-border-color);*/
+    /*    position: relative;*/
+    /*    z-index: 100;*/
+    /*}*/
+    /*textarea:valid {*/
+    /*    outline: 2px solid green;*/
+    /*}*/
+
+    /*textarea:user-invalid {*/
+    /*    outline: 2px solid red;*/
+    /*    !* background: #FFEFEF; *!*/
+    /*}*/
+
+
 
     form {
         container-type: inline-size;
