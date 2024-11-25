@@ -2,15 +2,17 @@
     import TextButton from '$lib/Subscribe.svelte';
     import {onMount} from 'svelte';
 
+    const texteare = document.querySelector('textarea');
+    const select = document.querySelector('select');
+
+    // als het input field leeg is voeg een border-bottom toe met add class
+    //
     //     todo met javascript verplicht maken van de fte en de texteare
 </script>
 <h1>INSCHRIJVEN</h1>
 
-<!--todo meer structuur toevoegen in de css-->
-<!--todo een button en geen a-->
 <form action="/bedankt">
 
-    <!--    todo de form moet een action hebben -->
     <!--     todo met css steertetje maken befoe en after -->
     <fieldset>
         <legend>persoonlijke gegevens</legend>
@@ -45,7 +47,7 @@
                         <span class="star">  Mobiel</span>
             <input aria-required="true" id="Mobiel"
                    required
-                   type="tel"/>
+                   type="number"/>
         </label>
         <label class="form-label" for="Bedrijfsnaam">
 
