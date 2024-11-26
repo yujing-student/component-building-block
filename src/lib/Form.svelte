@@ -27,15 +27,21 @@
             <span class="star">       Functie</span>
             <input aria-required="true" id="functie" required type="text"/>
         </label>
+
+
+
+
         <label class="form-label" for="Voornaam">
             <span class="star">Voornaam</span>
             <input aria-required="true" id="Voornaam" required type="text"
             />
         </label>
-        <label class="form-label" for="Tussenvoegsel">
-            Tussenvoegsel
-            <input id="Tussenvoegsel" type="text"/>
+        <label class="form-label" for="functie">
+
+            <span class="no-star">       Tussenvoegsel</span>
+            <input aria-required="true" id="functie" required type="text"/>
         </label>
+
         <label class="form-label" for="Achternaam">
 
             <span class="star">Achternaam</span>
@@ -81,7 +87,6 @@
 
 <!--todo uitzoeken hoe je een false state kan doen -->
             <select aria-required="true" id="FTE" required>
-                <option disabled hidden selected value="-1"></option>
                 <option value="1-9">
                     1-9
                 </option>
@@ -134,6 +139,7 @@
     span {
         grid-row: 1;
         grid-column: 1;
+        height: 2rem;
 
     }
 
@@ -157,6 +163,10 @@
         font-size: 2rem;
         color: red;
 
+    }
+    .no-star:after{
+        font-size: 2rem;
+        content: "";
     }
 
 
@@ -202,6 +212,7 @@
             grid-template-columns: auto auto;
             max-width: 700px;
             gap: 1rem;
+
         }
 
         .input-textfield {
