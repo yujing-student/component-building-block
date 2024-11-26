@@ -1,19 +1,14 @@
 <script>
     import TextButton from '$lib/Subscribe.svelte';
-    import {onMount} from 'svelte';
-
-    // onMount( () => {
-    //
-    //     let texteare = document.querySelector('textarea');
-    //     let select = document.querySelector('select');
-    //
-    //
-    // });
 
 
-    // als het input field leeg is voeg een border-bottom toe met add class
-    //event prevault
-    //     todo met javascript verplicht maken van de fte en de texteare
+    // todo empty string aanmaken
+
+    // https://svelte.dev/tutorial/svelte/derived-state
+    let selectedValue = '';
+
+
+
 </script>
 <h1>INSCHRIJVEN</h1>
 
@@ -85,8 +80,13 @@
 
             <span class="star">      FTE</span>
 
-<!--todo uitzoeken hoe je een false state kan doen -->
-            <select aria-required="true" id="FTE" required>
+<!--todo uitzoeken hoe je een false state kan doen met bind en css -->
+
+<!--            //     https://svelte.dev/docs/svelte/bind-->
+            <select aria-required="true" id="FTE" required bind:value={selectedValue}>
+                <option value="-1" id="error">
+
+                </option>
                 <option value="1-9">
                     1-9
                 </option>
@@ -166,6 +166,7 @@
     }
     .no-star:after{
         font-size: 2rem;
+
         content: "";
     }
 
@@ -200,6 +201,32 @@
         outline: 2px solid red;
     }
 
+    /*#error{*/
+    /*    outline: 2px solid red;*/
+    /*}*/
+    select[value="-1"] {
+        outline: 2px solid red;
+    }
+
+    select[value="1-9"] {
+        border: 2px solid green;
+    }
+    select[value="10-24"] {
+        border: 2px solid green;
+    }
+    select[value="25-49"] {
+        border: 2px solid green;
+    }
+    select[value="100-99"] {
+        border: 2px solid green;
+    }
+
+    /*<option value="100-249">*/
+    /*100-249*/
+    /*</option>*/
+    /*<option value="250+">*/
+    /*250*/
+    /*</option>*/
 
     /*contianer queries */
     form {

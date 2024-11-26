@@ -56,6 +56,8 @@
         margin-bottom: -0.6rem;
         border-left: 1px solid var(--grey);
         padding: 0.2rem 0.2rem 0.4rem 0.4em;
+
+        /*padding: 0.5rem 0.5rem 0.7rem 0.8em;*/
     }
 
 </style>
