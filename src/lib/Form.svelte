@@ -5,8 +5,8 @@
     // todo empty string aanmaken
 
     // https://svelte.dev/tutorial/svelte/derived-state
-    let selectedValue = '';
-
+    // this value is going to change
+    let selectedValue = "";
 
 
 </script>
@@ -15,12 +15,19 @@
 <form action="/bedankt">
 
     <!--     todo met css steertetje maken befoe en after -->
+
+
     <fieldset>
+
+
         <legend>persoonlijke gegevens</legend>
         <label class="form-label" for="functie">
 
             <span class="star">       Functie</span>
-            <input aria-required="true" id="functie" required type="text"/>
+            <input aria-required="true"
+
+                   required type="text"/>
+
         </label>
 
 
@@ -28,43 +35,43 @@
 
         <label class="form-label" for="Voornaam">
             <span class="star">Voornaam</span>
-            <input aria-required="true" id="Voornaam" required type="text"
+            <input aria-required="true"  required type="text"
             />
         </label>
         <label class="form-label" for="functie">
 
             <span class="no-star">       Tussenvoegsel</span>
-            <input aria-required="true" id="functie" required type="text"/>
+            <input aria-required="true"  type="text"/>
         </label>
 
         <label class="form-label" for="Achternaam">
 
             <span class="star">Achternaam</span>
-            <input aria-required="true" id="Achternaam" required type="text"/>
+            <input aria-required="true" required type="text"/>
         </label>
 
         <label class="form-label" for="email">
 
             <span class="star">E-mail</span>
-            <input aria-required="true" id="email" required type="email"/>
+            <input aria-required="true"  required type="email"/>
 
         </label>
         <label class="form-label" for="Mobiel">
 
             <span class="star">  Mobiel</span>
-            <input aria-required="true" id="Mobiel"
+            <input aria-required="true"
                    required
                    type="number"/>
         </label>
         <label class="form-label" for="Bedrijfsnaam">
 
             <span class="star">Bedrijfsnaam</span>
-            <input aria-required="true" id="Bedrijfsnaam" required type="text"/>
+            <input aria-required="true" name="Bedrijfsnaam" required type="text"/>
         </label>
         <label class="form-label " for="Bedrijfswebsite">
 
             <span class="star">Bedrijfswebsite</span>
-            <input aria-required="true" id="Bedrijfswebsite" required type="text"/>
+            <input aria-required="true" name="Bedrijfswebsite" required type="text"/>
         </label>
 
 
@@ -83,11 +90,11 @@
 <!--todo uitzoeken hoe je een false state kan doen met bind en css -->
 
 <!--            //     https://svelte.dev/docs/svelte/bind-->
-            <select aria-required="true" id="FTE" required bind:value={selectedValue}>
-                <option value="-1" id="error">
+            <select aria-required="true" name="FTE" required bind:value={selectedValue}>
+                <option value="">
 
                 </option>
-                <option value="1-9">
+                <option value="">
                     1-9
                 </option>
                 <option value="10-24">
@@ -201,32 +208,6 @@
         outline: 2px solid red;
     }
 
-    /*#error{*/
-    /*    outline: 2px solid red;*/
-    /*}*/
-    select[value="-1"] {
-        outline: 2px solid red;
-    }
-
-    select[value="1-9"] {
-        border: 2px solid green;
-    }
-    select[value="10-24"] {
-        border: 2px solid green;
-    }
-    select[value="25-49"] {
-        border: 2px solid green;
-    }
-    select[value="100-99"] {
-        border: 2px solid green;
-    }
-
-    /*<option value="100-249">*/
-    /*100-249*/
-    /*</option>*/
-    /*<option value="250+">*/
-    /*250*/
-    /*</option>*/
 
     /*contianer queries */
     form {
