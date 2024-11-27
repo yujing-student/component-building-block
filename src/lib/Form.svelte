@@ -16,8 +16,9 @@
     <!--     todo met css steertetje maken befoe en after -->
     <fieldset>
         <legend>persoonlijke gegevens</legend>
+
         <label class="form-label" for="functie">
-            <span class="star">       Functie</span>
+            <span class="star"> Functie</span>
             <input aria-required="true"
                    name="functie"
                    id="functie"
@@ -33,9 +34,9 @@
                    autocomplete="given-name"
             />
         </label>
-        <label class="form-label" for="functie">
 
-            <span class="no-star">       Tussenvoegsel</span>
+        <label class="form-label" for="functie">
+            <span class="no-star">Tussenvoegsel</span>
             <input aria-required="true"
                    id="tussenvoegsel"
                    name="tussenvoegesel"
@@ -44,17 +45,15 @@
         </label>
 
         <label class="form-label" for="Achternaam">
-
             <span class="star">Achternaam</span>
             <input aria-required="true"
-                   name="achternaam"
-                   id="achternaam"
+                   name="Achternaam"
+                   id="Achternaam"
                    autocomplete="family-name"
                    required type="text"/>
         </label>
 
         <label class="form-label" for="email">
-
             <span class="star">E-mail</span>
             <input aria-required="true"
                    name="email"
@@ -62,17 +61,18 @@
 
                    autocomplete="email"
                    required type="email"/>
-
         </label>
-        <label class="form-label" for="Mobiel">
 
-            <span class="star">  Mobiel</span>
+        <label class="form-label" for="Mobiel">
+            <span class="star">Mobiel</span>
             <input aria-required="true"
                    required
-                   name="mobiel"
+                   name="Mobiel"
+                   id="Mobiel"
                    autocomplete="tel"
                    type="number"/>
         </label>
+
         <label class="form-label" for="Bedrijfsnaam">
 
             <span class="star">Bedrijfsnaam</span>
@@ -94,23 +94,25 @@
 
         <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
             <span class="star">Ik wil graag lid worden omdat </span>
-
-
-            <textarea aria-required="true" cols="5" placeholder="" required name="textarea"
-                      id="textearea"
-                      rows="1"></textarea>
+            <textarea aria-required="true"
+                      cols="5"
+                      required
+                      name="ik-wil-graag-lid-worden-omdat"
+                      id="ik-wil-graag-lid-worden-omdat"
+                      rows="1">
+            </textarea>
         </label>
 
         <label class="dropown" for="FTE">
-
-            <span class="star">      FTE</span>
-
+            <span class="star">  FTE</span>
             <!--todo uitzoeken hoe je een false state kan doen met bind en css -->
-
             <!--            //     https://svelte.dev/docs/svelte/bind-->
-            <select aria-required="true" bind:value={selectedValue} name="FTE" id="FTE" required>
-                <option value="">
+            <select aria-required="true" bind:value={selectedValue}
+                    name="FTE"
+                    id="FTE"
+                    required>
 
+                <option value="">
                 </option>
                 <option value="">
                     1-9
@@ -131,6 +133,7 @@
                     250
                 </option>
             </select>
+
         </label>
 
         <TextButton/>
