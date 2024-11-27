@@ -78,13 +78,17 @@
             <span class="star">Bedrijfsnaam</span>
             <input aria-required="true"
                    name="Bedrijfsnaam"
+                   id="Bedrijfsnaam"
 
                    required type="text"/>
         </label>
         <label class="form-label " for="Bedrijfswebsite">
 
             <span class="star">Bedrijfswebsite</span>
-            <input aria-required="true" name="Bedrijfswebsite" required type="text"/>
+            <input aria-required="true"
+                   name="Bedrijfswebsite"
+                   id="Bedrijfswebsite"
+                   required type="text"/>
         </label>
 
 
@@ -104,7 +108,7 @@
             <!--todo uitzoeken hoe je een false state kan doen met bind en css -->
 
             <!--            //     https://svelte.dev/docs/svelte/bind-->
-            <select aria-required="true" bind:value={selectedValue} name="FTE" required>
+            <select aria-required="true" bind:value={selectedValue} name="FTE" id="FTE" required>
                 <option value="">
 
                 </option>
