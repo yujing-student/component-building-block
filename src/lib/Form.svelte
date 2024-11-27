@@ -1,5 +1,5 @@
 <script>
-    import TextButton from '$lib/Subscribe.svelte';
+    import TextButton from '$lib/Subscribe-button.svelte';
 
 
     // todo empty string aanmaken
