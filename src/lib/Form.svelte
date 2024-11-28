@@ -214,7 +214,7 @@
     input[type='text']:user-valid,
     input[type='email']:valid,
     input[type='number']:valid,
-    textarea:valid,
+    textarea:user-valid,
     select:user-valid {
         outline: 2px solid green;
 
