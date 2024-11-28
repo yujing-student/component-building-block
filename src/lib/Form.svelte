@@ -92,15 +92,22 @@
         </label>
 
 
+<!--        <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">-->
+<!--            <span class="star">Ik wil graag lid worden omdat </span>-->
+<!--            <textarea aria-required="true"-->
+<!--                      cols="5"-->
+<!--                      required-->
+<!--                      name="ik-wil-graag-lid-worden-omdat"-->
+<!--                      id="ik-wil-graag-lid-worden-omdat"-->
+<!--                      rows="1">-->
+<!--            </textarea>-->
+<!--        </label>-->
         <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
             <span class="star">Ik wil graag lid worden omdat </span>
-            <textarea aria-required="true"
-                      cols="5"
-                      required
-                      name="ik-wil-graag-lid-worden-omdat"
-                      id="ik-wil-graag-lid-worden-omdat"
-                      rows="1">
-            </textarea>
+
+
+            <textarea aria-required="true" cols="5" placeholder="" required
+                      rows="1"></textarea>
         </label>
 
         <label class="dropown" for="FTE">
