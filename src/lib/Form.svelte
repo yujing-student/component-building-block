@@ -1,8 +1,10 @@
 <script>
     import TextButton from '$lib/Subscribe-button.svelte';
-
-
-    // todo empty string aanmaken
+    import Input from "$lib/Input-text.svelte";
+    import InputNotMandoraty from "$lib/Input-text-not-mandaroty.svelte";
+    import InputEmail from "$lib/Input-email.svelte";
+    import InputMobile from "$lib/Input-mobile.svelte";
+    import Textareacompoent from "$lib/Textarea.svelte";
 
     // https://svelte.dev/tutorial/svelte/derived-state
     // this value is going to change
@@ -16,100 +18,15 @@
     <!--     todo met css steertetje maken befoe en after -->
     <fieldset>
         <legend>persoonlijke gegevens</legend>
-
-        <label class="form-label" for="functie">
-            <span class="star"> Functie</span>
-            <input aria-required="true"
-                   name="functie"
-                   id="functie"
-                   required type="text"/>
-        </label>
-
-        <label class="form-label" for="Voornaam">
-            <span class="star">Voornaam</span>
-            <input aria-required="true"
-                   required type="text"
-                   name="voornaam"
-                   id="Voornaam"
-                   autocomplete="given-name"
-            />
-        </label>
-
-        <label class="form-label" for="functie">
-            <span class="no-star">Tussenvoegsel</span>
-            <input aria-required="true"
-                   id="tussenvoegsel"
-                   name="tussenvoegesel"
-                   autocomplete="additional-name"
-                   type="text"/>
-        </label>
-
-        <label class="form-label" for="Achternaam">
-            <span class="star">Achternaam</span>
-            <input aria-required="true"
-                   name="Achternaam"
-                   id="Achternaam"
-                   autocomplete="family-name"
-                   required type="text"/>
-        </label>
-
-        <label class="form-label" for="email">
-            <span class="star">E-mail</span>
-            <input aria-required="true"
-                   name="email"
-                   id="email"
-
-                   autocomplete="email"
-                   required type="email"/>
-        </label>
-
-        <label class="form-label" for="Mobiel">
-            <span class="star">Mobiel</span>
-            <input aria-required="true"
-                   required
-                   name="Mobiel"
-                   id="Mobiel"
-                   autocomplete="tel"
-                   type="number"/>
-        </label>
-
-        <label class="form-label" for="Bedrijfsnaam">
-
-            <span class="star">Bedrijfsnaam</span>
-            <input aria-required="true"
-                   name="Bedrijfsnaam"
-                   id="Bedrijfsnaam"
-
-                   required type="text"/>
-        </label>
-        <label class="form-label " for="Bedrijfswebsite">
-
-            <span class="star">Bedrijfswebsite</span>
-            <input aria-required="true"
-                   name="Bedrijfswebsite"
-                   id="Bedrijfswebsite"
-                   required type="text"/>
-        </label>
-
-
-<!--        <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">-->
-<!--            <span class="star">Ik wil graag lid worden omdat </span>-->
-<!--            <textarea aria-required="true"-->
-<!--                      cols="5"-->
-<!--                      required-->
-<!--                      name="ik-wil-graag-lid-worden-omdat"-->
-<!--                      id="ik-wil-graag-lid-worden-omdat"-->
-<!--                      rows="1">-->
-<!--            </textarea>-->
-<!--        </label>-->
-        <label class="form-label input-textfield" for="ik-wil-graag-lid-worden-omdat">
-            <span class="star">Ik wil graag lid worden omdat </span>
-
-
-            <textarea aria-required="true" cols="5" placeholder="" required
-                      rows="1"></textarea>
-        </label>
-
+        <Input label="Functie" id="Functie" name="Functie" />
+        <Input label="Voornaam" id="voornaam" name="voornaam" />
+        <InputNotMandoraty label="Tussenvoegsel" id="Tussenvoegsel" name="Tussenvoegsel" />
+        <Input label="Achternaam" id="Achternaam" name="Achternaam" />
+        <InputEmail label="email" id="email" name="email" />
+        <InputMobile label="Mobiel" id="Mobiel" name="Mobiel" />
+        <Input label="Bedrijfsnaam" id="Bedrijfsnaam" name="Bedrijfsnaam" />
+        <Input label="Bedrijfswebsite" id="Bedrijfswebsite" name="Bedrijfswebsite" />
+        <Textareacompoent label="Ik-wil-graag-lid-worden" id="Ik-wil-graag-lid-worden" />
         <label class="dropown" for="FTE">
             <span class="star">  FTE</span>
             <!--todo uitzoeken hoe je een false state kan doen met bind en css -->
