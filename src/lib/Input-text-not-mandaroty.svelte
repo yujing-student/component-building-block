@@ -4,7 +4,6 @@
     export let name;
     export let type = 'text'; // Default type is 'text'
     export let placeholder = '';
-    export let required = false;
 </script>
 
 <label class="form-label" for={id}>
@@ -19,19 +18,6 @@
 </label>
 <style>
 
-    form {
-        color: var(--grey);
-    }
-
-    fieldset {
-        border: none;
-    }
-
-    legend {
-        position: absolute;
-        top: 0;
-        left: -9999px;
-    }
 
     label {
         margin-top: 1.8rem;
@@ -59,16 +45,6 @@
     }
 
 
-    textarea {
-        height: auto;
-    }
-
-    .star:after {
-        content: "*";
-        font-size: 2rem;
-        color: red;
-
-    }
 
     .no-star:after {
         font-size: 2rem;
@@ -78,21 +54,17 @@
 
 
     /*ui states*/
-    input:focus, textarea:focus, select:focus, option:focus {
+    input:focus {
         outline: 2px solid var(--blue);
     }
 
-    textarea {
-        width: 100%; /* Make it full width */
-    }
 
     /* form focus valid  */
 
     input[type='text']:user-valid,
     input[type='email']:valid,
-    input[type='number']:valid,
-    textarea:user-valid,
-    select:user-valid {
+    input[type='number']:valid
+    {
         outline: 2px solid green;
 
     }
@@ -101,9 +73,8 @@
 
     input[type='text']:user-invalid,
     input[type='email']:user-invalid,
-    input[type='number']:user-invalid,
-    textarea:user-invalid,
-    select:user-invalid {
+    input[type='number']:user-invalid
+    {
         outline: 2px solid red;
     }
 
